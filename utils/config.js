@@ -32,14 +32,16 @@ var POSTERIMGURL ="../../images/logo700.png"; //生成海报如果没有首图�
 var DOWNLOADFILEDOMAIN = [
     { id: 1, domain: 'olei.me' },
     { id: 2, domain: 'www.olei.me' },
-    { id: 3, domain: 'www.qiniu.com' }
+    { id: 3, domain: 'www.qiniu.com' },
+    { id: 4, domain: 'resources.olei.me'},
+    { id: 5, domain: 'www.watch-life.net'}
 ]
  //首页图标导航
  //参数说明：'name'为名称，'image'为图标路径，'url'为跳转的页面，'redirecttype'为跳转的类型，apppage为本小程序的页面，miniapp为其他微信小程序,webpage为web-view的页面
  //        'appid' 当redirecttype为miniapp时，这个值为其他微信小程序的appid，如果redirecttype为apppage，webpage时，这个值设置为空。
  //         'extraData'当redirecttype为miniapp时，这个值为提交到其他微信小程序的参数，如果redirecttype为apppage，webpage时，这个值设置为空。
 var INDEXNAV = [
-    { id: '1', name: '微店', image: '../../images/shop.png', url: 'pages/shelf/shelf', redirecttype: 'miniapp', appid: 'wx55ea6098e41af5c4', extraData:'' },
+    { id: '1', name: '微店', image: '../../images/shop.png', url: 'pages/shelf/shelf', redirecttype: 'miniapp', appid: '', extraData:'' },
     { id: '2', name: '排行', image: '../../images/ranking.png', url: '../hot/hot', redirecttype: 'apppage', appid: '', extraData:''},   
     { id: '3', name: '教程', image: '../../images/app.png', url: '../list/list?categoryID=98', redirecttype: 'apppage', appid: '', extraData: '' },
    ]
@@ -51,7 +53,7 @@ export default {
   getPayTemplateId: PAYTEMPPLATEID,
   getPageCount: PAGECOUNT,
   getCategoriesID :CATEGORIESID,
-  getIndexNav: INDEXNAV,
+  // getIndexNav: INDEXNAV,
   getReplayTemplateId: REPLAYTEMPPLATEID,
   getMinAppType: MINAPPTYPE,
   getZanImageUrl: ZANIMAGEURL,
