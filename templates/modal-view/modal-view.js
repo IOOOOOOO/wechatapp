@@ -1,11 +1,4 @@
-/**
- * ModalView by Robin Shen
- * WeApp ModalView add-ons
- * 微信小程序 ModalView 增强插件
- * Created at 2017-08-23
- * Github: https://github.com/iRobin520/WeApp-ModalView.git
- * LICENSE: MIT
- */
+
 
 function ModalViewClass() {
     //数据
